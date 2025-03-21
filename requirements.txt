@@ -1,1 +1,10 @@
 streamlit
+display
+pandas
+duckdb
+tseopt
+numpy
+datetime
+openpyxl
+khayyam
+warnings
