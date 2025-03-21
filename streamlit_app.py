@@ -11,7 +11,7 @@ from datetime import date, datetime
 from khayyam import JalaliDate, JalaliDatetime, TehranTimezone
 import warnings
 warnings.filterwarnings('ignore')
-
+st.title("نزدیک ترین سررسید")
 #days = int(input("Days To Maturity:"))
 #گرفتن دیتای بازار آپشن
 entire_option_market_data = get_all_options_data()
@@ -53,9 +53,6 @@ for item in unique_list:
     formated_day = int(f"{string_result[6:]}")
     shamsi = JalaliDate(date(formatted_year, formated_month, formated_day))
     #print(shamsi)
-
-
-st.title("نزدیک ترین سررسید")
-st.write(
-    item, shamsi
-)
+    st.write(
+        item, shamsi
+        )
